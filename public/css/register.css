@@ -1,0 +1,91 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-layout1-container{
+    position: relative;
+}
+.input-layout1-label{
+    position : absolute;
+    left : 10px;
+    top : 16px;
+    padding : 3px 5px;
+    font-weight: bold;
+    color: #95a5a6;
+    background : white;
+}
+.input-layout1{
+    width : 250px;
+    height: 40px;
+    border-radius: 5px;
+    border : 0.5px solid #bdc3c7;
+    padding : 0px 5px;
+    margin-top : 30px;
+    background : white;
+}
+.input-layout1:focus{
+    outline : none;
+    border-color: #2980b9;
+    background : white;
+    box-shadow: 0px 0px 0px 3px rgba(41, 128, 185,0.3);
+}
+.input-checkbox1-container{
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap : wrap;
+    height: 70px;
+    margin-top : 25px;
+}
+.input-checkbox1-label{
+    margin-right : 10px;
+}
+.submit-btn{
+    margin-top : 20px;
+    border-radius: 5px;
+    background : #2980b9;
+    color : white;
+    padding : 0px 20px;
+    border : none;
+    height: 40px;
+}
+.submit-btn:focus{
+    outline : none;
+}
+.register-login{
+    display: flex;
+    margin-top: 15px;
+}
+.success-message{
+ display: flex;
+ width: 250px;
+ justify-content: flex-start;
+ align-items: center;
+ background: rgba(39, 174, 96,0.7);
+ border : 0.5px solid #bdc3c7;
+ margin-top: 5px;
+ border-radius: 5px;
+ height: 30px;
+ padding : 0px 5px;
+}
+.error-message{
+    display: flex;
+    width: 250px;
+    justify-content: flex-start;
+    align-items: center;
+    background:rgba(231, 76, 60,0.7);
+    border : 0.5px solid #bdc3c7;
+    margin-top: 5px;
+    border-radius: 5px;
+    height: 30px;
+    padding : 0px 5px;
+}

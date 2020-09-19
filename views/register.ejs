@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+    
+<div class="wrapper">
+    <h1>Register</h1>
+    <%- include('paritals/messages') %>
+    <form action="" method="POST">
+        <div class="input-layout1-container">
+            <input oninput="this.value = this.value.toUpperCase()" class="input-layout1" type="text" name="name" 
+            value="<%= typeof name != 'undefined' ? name : '' %>">
+            <label class="input-layout1-label">Full Name</label>
+        </div>
+        <div class="input-layout1-container">
+            <input oninput="this.value = this.value.toLowerCase()" class="input-layout1" type="email" name="email"
+            value="<%= typeof email != 'undefined' ? email : '' %>">
+            <label class="input-layout1-label">E-mail</label>
+        </div>
+        <div class="input-layout1-container">
+            <input class="input-layout1" type="text" name="contact"
+            value="<%= typeof contact != 'undefined' ? contact : '' %>">
+            <label class="input-layout1-label">Contact</label>
+        </div>
+        <div class="input-layout1-container">
+            <input class="input-layout1" type="password" name="password"
+            value="<%= typeof password != 'undefined' ? password : '' %>">
+            <label class="input-layout1-label">Password</label>
+        </div>
+        <div class="input-layout1-container">
+            <input class="input-layout1" type="password" name="confpassword"
+            value="<%= typeof confPassword != 'undefined' ? confPassword : '' %>">
+            <label class="input-layout1-label">Confirm Password</label>
+        </div>
+        <button class="submit-btn" type="submit">REGISTER</button>
+    </form>
+    <label class="register-login">
+        Already have an account &nbsp;&nbsp;<a href="/user/login">Login</a>
+    </label>
+    </div>
+</body>
+</html>
