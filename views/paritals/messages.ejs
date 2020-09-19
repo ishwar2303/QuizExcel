@@ -1,0 +1,23 @@
+<% if(typeof errors != 'undefined'){ %><% errors.forEach(err => { %>
+    <label class="error-message"> <%= err.msg %> </label>
+<% }) %> <% } %>
+
+<% if(success_msg != ''){%>
+    <label class="success-message"> <%= success_msg %> </label>
+<% } %>
+
+<% if(error_msg != ''){%>
+    <label class="success-message"> <%= error_msg %> </label>
+<% } %>
+
+<% if(error != ''){%>
+    <label class="success-message"> <%= error %> </label>
+<% } %>
+
+
+
+
+
+
+
+

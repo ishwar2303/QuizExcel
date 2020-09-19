@@ -1,0 +1,21 @@
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/register.css">
+
+<div style="height: 100vh;" class="wrapper">
+    <h1>Login</h1>
+    <%- include('paritals/messages') %>
+    <form action="" method="POST">
+        <div class="input-layout1-container">
+            <input oninput="this.value = this.value.toLowerCase()" class="input-layout1" type="email" name="email" >
+            <label class="input-layout1-label">E-mail</label>
+        </div>
+        <div class="input-layout1-container">
+            <input class="input-layout1" type="password" name="password" >
+            <label class="input-layout1-label">Password</label>
+        </div>
+        <button class="submit-btn" type="submit">LOGIN</button>
+    </form>
+    <label class="register-login">
+        Create an account &nbsp;&nbsp;<a href="/user/register">Register</a>
+    </label>
+</div>
